@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naitam Gandhi — Full-Stack & AI Platform Engineer</title>
+  <meta name="description" content="Naitam Gandhi — Full-Stack Software Engineer specializing in DevOps, cloud platforms, ML pipelines, and AI-driven automation at enterprise scale." />
+
+  <meta property="og:title" content="Naitam Gandhi — Full-Stack & AI Platform Engineer" />
+  <meta property="og:description" content="Building full-stack systems, automating with AI, and shipping ML pipelines at enterprise scale." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='30' fill='none' stroke='%232dd4bf' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='%23fbbf24'/></svg>" />
+</head>
+<body>
+  <!-- Animated node-network backdrop -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--teal"></span>
+    <span class="aurora__blob aurora__blob--amber"></span>
+    <span class="aurora__blob aurora__blob--indigo"></span>
+  </div>
+
+  <!-- Brand mark: top-left fixed -->
+  <a href="#top" class="brand-tag" id="brandTag">
+    <span class="brand-tag__tilde">~/</span><span class="brand-tag__name" data-brand></span>
+  </a>
+
+  <main id="top">
+
+    <!-- HERO — terminal window on aurora background -->
+    <section class="hero" id="hero">
+      <div class="hero__terminal">
+        <div class="hero__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="hero__bar-title" data-term-title></span>
+        </div>
+        <div class="hero__body">
+          <p class="hero__line"><span class="prompt" data-prompt></span><span class="cmd"> whoami</span></p>
+          <h1 class="hero__name" data-name></h1>
+          <p class="hero__line"><span class="prompt" data-prompt></span><span class="cmd"> cat role.txt</span></p>
+          <p class="hero__role"><span data-typed></span><span class="caret">|</span></p>
+          <p class="hero__tagline" data-tagline></p>
+          <div class="hero__avail" data-available></div>
+          <div class="hero__cta" data-hero-cta></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="section__title"><span class="section__node"></span>About</h2>
+      <div class="about">
+        <div class="about__text" data-about></div>
+        <div class="about__stats" data-stats></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2 class="section__title"><span class="section__node"></span>Experience</h2>
+      <div class="timeline" data-experience></div>
+    </section>
+
+    <!-- PROJECTS — swipe carousel -->
+    <section class="section" id="projects">
+      <h2 class="section__title"><span class="section__node"></span>Projects</h2>
+      <div class="filters" data-filters></div>
+      <div class="carousel" id="projectCarousel" tabindex="0" aria-label="Project cards — drag or use arrow keys">
+        <div class="carousel__track" data-projects></div>
+        <div class="carousel__footer">
+          <button class="carousel__btn" data-prev aria-label="Previous project">&#8592; prev</button>
+          <div class="carousel__dots" data-dots></div>
+          <button class="carousel__btn" data-next aria-label="Next project">next &#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS + CURRENTLY -->
+    <section class="section" id="skills">
+      <h2 class="section__title"><span class="section__node"></span>Skills &amp; Focus</h2>
+      <div class="skills-wrap">
+        <div class="skills" data-skills></div>
+        <aside class="currently" data-currently></aside>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2 class="section__title"><span class="section__node"></span>Education</h2>
+      <div class="edu" data-education></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <h2 class="section__title section__title--center"><span class="section__node"></span>Contact</h2>
+      <p class="contact__lead" data-contact-lead></p>
+      <div class="contact__links" data-contact-links></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span data-footer></span>
+  </footer>
+
+  <!-- Bottom floating dock nav -->
+  <nav class="dock" id="dock" aria-label="Primary navigation">
+    <a href="#about"      class="dock__item">about</a>
+    <a href="#experience" class="dock__item">exp</a>
+    <a href="#projects"   class="dock__item">work</a>
+    <a href="#skills"     class="dock__item">skills</a>
+    <a href="#contact"    class="dock__item">contact</a>
+  </nav>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
